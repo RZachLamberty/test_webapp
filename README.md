@@ -15,7 +15,7 @@ If you want to work with the files I have, that should be easy enough too! In a 
 
 ### preparing your local python environment
 ```bash
-git clone <github path to repo>
+git clone https://github.com/RZachLamberty/test_webapp.git
 cd ./test_webapp
 virtualenv /path/to/venv
 . /path/to/venv/bin/activate
