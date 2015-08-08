@@ -15,8 +15,6 @@ Usage:
 """
 
 import logging
-import logging.config
-import yaml
 
 from flask import render_template, request, redirect, flash
 from todoapp import app
