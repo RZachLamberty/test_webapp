@@ -14,10 +14,13 @@ Usage:
 
 """
 
+import os
+
 from flask import Flask
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test_webapp:test_webapp@localhost/todoapp'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test_webapp:test_webapp@localhost/todoapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 
 from views import *
 
